@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
@@ -14,13 +14,13 @@ namespace CalculatorBegginerProject
             string firstInput = Console.ReadLine();
             Console.WriteLine("Please specify the second input");
             string secondInput = Console.ReadLine();
-            int num1;
-            int num2;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
-            bool IsSecondinputparsable = Int32.TryParse(secondInput, out num2);
+            double num1;
+            double num2;
+            bool IsFirstinputparsable = Double.TryParse(firstInput, out num1);
+            bool IsSecondinputparsable = Double.TryParse(secondInput, out num2);
             if (IsFirstinputparsable && IsSecondinputparsable)
             {
-                int result = num1 + num2;
+                double result = num1 + num2;
                 Console.WriteLine($"The result of {num1} and {num2} is {result}");
                 Console.ReadLine();
                 Console.Clear();
@@ -50,13 +50,13 @@ namespace CalculatorBegginerProject
             string firstInput = Console.ReadLine();
             Console.WriteLine("Please specify the second input");
             string secondInput = Console.ReadLine();
-            int num1;
-            int num2;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
-            bool IsSecondinputparsable = Int32.TryParse(secondInput, out num2);
+            double num1;
+            double num2;
+            bool IsFirstinputparsable = double.TryParse(firstInput, out num1);
+            bool IsSecondinputparsable = double.TryParse(secondInput, out num2);
             if (IsFirstinputparsable && IsSecondinputparsable)
             {
-                int result = num1 - num2;
+                double result = num1 - num2;
                 Console.WriteLine($"The result of {num1} and {num2} is {result}");
                 Console.ReadLine();
                 Console.Clear();
@@ -88,13 +88,13 @@ namespace CalculatorBegginerProject
             string firstInput = Console.ReadLine();
             Console.WriteLine("Please specify the second input");
             string secondInput = Console.ReadLine();
-            int num1;
-            int num2;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
-            bool IsSecondinputparsable = Int32.TryParse(secondInput, out num2);
+            double num1;
+            double num2;
+            bool IsFirstinputparsable = double.TryParse(firstInput, out num1);
+            bool IsSecondinputparsable = double.TryParse(secondInput, out num2);
             if (IsFirstinputparsable && IsSecondinputparsable)
             {
-                int result = num1 * num2;
+                double result = num1 * num2;
                 Console.WriteLine($"The result of {num1} and {num2} is {result}");
                 Console.ReadLine();
                 Console.Clear();
@@ -124,13 +124,13 @@ namespace CalculatorBegginerProject
             string firstInput = Console.ReadLine();
             Console.WriteLine("Please specify the second input");
             string secondInput = Console.ReadLine();
-            int num1;
-            int num2;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
-            bool IsSecondinputparsable = Int32.TryParse(secondInput, out num2);
+            double num1;
+            double num2;
+            bool IsFirstinputparsable = double.TryParse(firstInput, out num1);
+            bool IsSecondinputparsable = double.TryParse(secondInput, out num2);
             if (IsFirstinputparsable && IsSecondinputparsable)
             {
-                int result = num1 / num2;
+                double result = num1 / num2;
                 Console.WriteLine($"The result of {num1} and {num2} is {result}");
                 Console.ReadLine();
                 Console.Clear();
@@ -160,13 +160,13 @@ namespace CalculatorBegginerProject
             string firstInput = Console.ReadLine();
             Console.WriteLine("Please specify the second input");
             string secondInput = Console.ReadLine();
-            int num1;
-            int num2;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
-            bool IsSecondinputparsable = Int32.TryParse(secondInput, out num2);
+            double num1;
+            double num2;
+            bool IsFirstinputparsable = double.TryParse(firstInput, out num1);
+            bool IsSecondinputparsable = double.TryParse(secondInput, out num2);
             if (IsFirstinputparsable && IsSecondinputparsable)
             {
-                int result = (int)Math.Pow(num1, num2);
+                double result = (double)Math.Pow(num1, num2);
                 Console.WriteLine($"The result of {num1} and {num2} is {result}");
                 Console.ReadLine();
                 Console.Clear();
@@ -194,11 +194,11 @@ namespace CalculatorBegginerProject
         {
             Console.WriteLine("Please specify the first input");
             string firstInput = Console.ReadLine();
-            int num1;
-            bool IsFirstinputparsable = Int32.TryParse(firstInput, out num1);
+            double num1;
+            bool IsFirstinputparsable = double.TryParse(firstInput, out num1);
             if (IsFirstinputparsable)
             {
-                int result = (int)Math.Sqrt(num1);
+                double result = Math.Sqrt(num1);
                 Console.WriteLine($"The SquareRoot of {num1} is {result}");
                 Console.ReadLine();
                 Console.Clear();
